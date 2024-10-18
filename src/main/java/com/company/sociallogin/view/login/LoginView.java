@@ -125,11 +125,6 @@ public class LoginView extends StandardView implements LocaleChangeObserver {
         login.setI18n(loginI18n);
     }
 
-    @Subscribe(id = "googleBtn", subject = "clickListener")
-    public void onGoogleBtnClick(final ClickEvent<JmixButton> event) {
-        UI.getCurrent().getPage().setLocation("/oauth2/authorization/google");
-    }
-
     @Subscribe(id = "githubBtn", subject = "clickListener")
     public void onGithubBtnClick(final ClickEvent<JmixButton> event) {
         UI.getCurrent().getPage().setLocation("/oauth2/authorization/github");
